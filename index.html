@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Daily Lens - politics, local, international, sports and education news from Malawi and beyond.">
+  <title>Home | The Daily Lens</title>
+  <link rel="icon" href="images/logo/logo-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/loader.css">
+</head>
+<body data-page="home" data-base="">
+
+  <!-- Loading effect -->
+  <div id="loader" aria-label="Loading">
+    <img class="loader-logo" src="images/logo/logo-icon.svg" alt="">
+    <div class="loader-ring"></div>
+    <div class="loader-name">THE DAILY LENS</div>
+    <div class="loader-sub">Loading the latest stories...</div>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <span id="todayDate">Blantyre, Malawi</span>
+      <span>Your focused daily news</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="The Daily Lens - home">
+          <img src="images/logo/logo.svg" alt="The Daily Lens - your focused daily news">
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a class="nav-link" href="categories/politics.html">News <span class="caret">&#9660;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="categories/politics.html">Politics</a></li>
+              <li><a href="categories/national.html">National News</a></li>
+              <li><a href="categories/national.html">National News</a></li>
+          <li><a href="categories/local.html">Local News</a></li>
+              <li><a href="categories/international.html">International</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a class="nav-link" href="index.html#latest">Sections <span class="caret">&#9660;</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="categories/sports.html">Sports</a></li>
+              <li><a href="categories/business.html">Business</a></li>
+              <li><a href="categories/technology.html">Technology</a></li>
+              <li><a href="categories/business.html">Business</a></li>
+          <li><a href="categories/technology.html">Technology</a></li>
+          <li><a href="categories/education.html">Education</a></li>
+              <li><a href="index.html#latest">Latest News</a></li>
+              <li><a href="index.html#popular">Popular News</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <form class="search-box" id="searchForm" role="search">
+          <input type="search" placeholder="Search news..." aria-label="Search news">
+          <button type="submit" aria-label="Search"><img src="images/icons/search.svg" alt=""></button>
+        </form>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breaking news ticker -->
+  <section class="ticker" aria-label="Breaking news">
+    <div class="container">
+      <span class="ticker-label">LATEST</span>
+      <div class="ticker-track"><div class="ticker-move" id="tickerMove"></div></div>
+    </div>
+  </section>
+
+  <!-- Hero slider -->
+  <section class="hero" aria-label="Top stories">
+    <div class="container">
+      <div class="slider" id="slider"></div>
+    </div>
+  </section>
+
+  <main class="container layout">
+    <div class="content">
+
+      <section class="section-block" aria-labelledby="featured-h">
+        <h2 class="section-title" id="featured-h">Featured News</h2>
+        <div id="featuredNews"></div>
+      </section>
+
+      <section class="section-block" id="latest" aria-labelledby="latest-h">
+        <h2 class="section-title" id="latest-h">Latest News</h2>
+        <div class="filters" id="filters" aria-label="Filter news by category"></div>
+        <div class="news-grid" id="latestNews"></div>
+      </section>
+
+    </div>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <section class="widget" id="popular">
+        <h3>Popular News</h3>
+        <ul class="popular-list" id="popularList"></ul>
+      </section>
+      <section class="widget">
+        <h3>Categories</h3>
+        <ul class="cat-list" id="categoryList"></ul>
+      </section>
+      <section class="widget donate-widget">
+        <h3>Have a Story Tip?</h3>
+        <p>Know something our readers should hear about? Tell us.</p>
+        <a class="btn" href="contact.html">Contact the Newsroom</a>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h4>The Daily Lens</h4>
+        <p>An online news platform bringing you politics, local, international, sports and education stories from Malawi and beyond.</p>
+      </section>
+      <nav aria-label="Footer links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer categories">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="categories/politics.html">Politics</a></li>
+          <li><a href="categories/local.html">Local News</a></li>
+          <li><a href="categories/international.html">International</a></li>
+          <li><a href="categories/sports.html">Sports</a></li>
+          <li><a href="categories/education.html">Education</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Social media">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://x.com" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.whatsapp.com" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Daily Lens. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal window -->
+  <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-label="Article preview">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <button id="backTop" aria-label="Back to top">&#8679;</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

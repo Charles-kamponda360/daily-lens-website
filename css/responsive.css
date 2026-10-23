@@ -1,0 +1,42 @@
+/* ===== Responsive design (tablet & mobile) ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .layout { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .featured-card { grid-template-columns: 1fr; }
+  .search-box input { width: 140px; }
+  .slider { height: 360px; }
+  .slide-caption h2 { font-size: 1.5rem; }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .header-inner { flex-wrap: wrap; }
+  .main-nav { order: 3; width: 100%; display: none; }
+  .main-nav.open { display: block; animation: fadeUp .3s ease; }
+  .main-nav ul.menu { flex-direction: column; align-items: stretch; gap: 0; }
+  .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; display: none; border-top: 0; background: #f0f5f1; }
+  .has-dropdown:hover > .dropdown-menu { display: none; }
+  .has-dropdown.open > .dropdown-menu { display: block; }
+  .header-tools { order: 2; }
+  .search-box input { width: 120px; }
+  .slider { height: 300px; }
+  .slide-caption { padding: 40px 16px 16px; }
+  .slide-caption h2 { font-size: 1.2rem; }
+  .slide-caption p { display: none; }
+  .slider-btn { width: 36px; height: 36px; }
+  .news-grid { grid-template-columns: 1fr; }
+  .page-banner h1 { font-size: 1.6rem; }
+  .article-full h1 { font-size: 1.5rem; }
+  .topbar .container { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .logo-text strong { font-size: 1.15rem; }
+  .logo img { height: 58px; }
+  .search-box input { width: 95px; }
+  .ticker-label { padding: 8px 10px; font-size: .8rem; }
+}
